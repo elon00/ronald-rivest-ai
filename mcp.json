@@ -1,0 +1,51 @@
+{
+  "name": "ronald-rivest-ai-mcp",
+  "version": "1.0.0",
+  "description": "Ronald Rivest AI Model Context Protocol Server for Autonomous Asymmetric Public-Key Cryptography, Auditable Election Security, Cryptographic Hashing & Symmetric Cipher Protocol",
+  "tools": [
+    {
+      "name": "audit_asymmetric_key_primality",
+      "description": "Verify large prime generation, trapdoor permutation security, and election ballot audit trails against post-quantum factoring",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "modulus_bits": {
+            "type": "string"
+          },
+          "audit_system": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "modulus_bits"
+        ]
+      }
+    },
+    {
+      "name": "disburse_election_integrity_grant",
+      "description": "Trigger automated micro-escrow releases for paper-verifiable election auditing systems, cryptographic hash verification, and open election infrastructure",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}
